@@ -1,1 +1,108 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #000000, #434343);
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1.5s;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #FFD700;
+            margin-bottom: 20px;
+            position: relative;
+            text-transform: uppercase;
+        }
+        .title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #FFD700;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            font-size: 1.2rem;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .menu-item span {
+            color: #FFD700;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">حلاق الملكي</div>
+        <div class="menu-item">
+            <span>دقن</span>
+            <span>50 جنيه</span>
+        </div>
+        <div class="menu-item">
+            <span>شعر</span>
+            <span>70 جنيه</span>
+        </div>
+        <div class="menu-item">
+            <span>دقن و شعر</span>
+            <span>110 جنيه</span>
+        </div>
+        <div class="menu-item">
+            <span>ماسك و حمام كريم</span>
+            <span>40 جنيه</span>
+        </div>
+        <div class="menu-item">
+            <span>استشوار</span>
+            <span>40 جنيه</span>
+        </div>
+        <div class="menu-item">
+            <span>حمام بخار</span>
+            <span>40 جنيه</span>
+        </div>
+    </div>
+</body>
+</html>
